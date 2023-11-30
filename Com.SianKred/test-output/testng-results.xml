@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T17:05:11 IST" name="Default suite" finished-at="2023-11-30T17:05:22 IST" duration-ms="10676">
+  <suite started-at="2023-11-30T17:08:45 IST" name="Default suite" finished-at="2023-11-30T17:08:55 IST" duration-ms="10854">
     <groups>
       <group name="regression">
-        <method signature="OpenAccountTest.applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" name="applyNewBankAccount_NeyazTC05" class="com.bixi.BaseTestScripts.OpenAccountTest"/>
+        <method signature="OpenAccountTest.applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" name="applyNewBankAccount_NeyazTC05" class="com.bixi.BaseTestScripts.OpenAccountTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2023-11-30T17:05:11 IST" name="Default test" finished-at="2023-11-30T17:05:22 IST" duration-ms="10676">
+    <test started-at="2023-11-30T17:08:45 IST" name="Default test" finished-at="2023-11-30T17:08:55 IST" duration-ms="10854">
       <class name="com.bixi.BaseTestScripts.OpenAccountTest">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" started-at="2023-11-30T17:05:11 IST" name="config_BS" finished-at="2023-11-30T17:05:11 IST" duration-ms="830" status="PASS">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:08:44 IST" name="config_BS" finished-at="2023-11-30T17:08:45 IST" duration-ms="828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" started-at="2023-11-30T17:05:12 IST" name="config_BC" finished-at="2023-11-30T17:05:15 IST" duration-ms="2992" status="PASS">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:08:45 IST" name="config_BC" finished-at="2023-11-30T17:08:47 IST" duration-ms="2924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BC -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" started-at="2023-11-30T17:05:15 IST" name="config_BM" finished-at="2023-11-30T17:05:15 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:08:47 IST" name="config_BM" finished-at="2023-11-30T17:08:48 IST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BM -->
-        <test-method signature="applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" started-at="2023-11-30T17:05:15 IST" name="applyNewBankAccount_NeyazTC05" finished-at="2023-11-30T17:05:22 IST" duration-ms="6902" status="FAIL">
+        <test-method signature="applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:08:48 IST" name="applyNewBankAccount_NeyazTC05" finished-at="2023-11-30T17:08:55 IST" duration-ms="7221" status="FAIL">
           <exception class="java.lang.IndexOutOfBoundsException">
             <message>
               <![CDATA[Index 10 out of bounds for length 10]]>
@@ -69,7 +69,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyNewBankAccount_NeyazTC05 -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@7ce69770]" started-at="2023-11-30T17:05:22 IST" name="config_AM" finished-at="2023-11-30T17:05:22 IST" duration-ms="521" status="PASS">
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:08:55 IST" name="config_AM" finished-at="2023-11-30T17:08:55 IST" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_AM -->

@@ -30,9 +30,9 @@ public class BaseClass {
 //		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
 //		PASSWORD = fUtil.readDataFromPropertyFile("password");
 //		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
-		CUSTOMERID = eUtil.readDataFromExcelFile("NeyazUTC_05", 0, 8);
-		PASSWORD = eUtil.readDataFromExcelFile("NeyazUTC_05", 1, 8);
-		NEWPASSWORD = eUtil.readDataFromExcelFile("NeyazUTC_05", 2, 8);
+		CUSTOMERID = eUtil.readDataFromExcelFile("ChangePassword", 0, 8);
+		PASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 1, 8);
+		NEWPASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 2, 8);
 	}
 //@Parameters("gateway")
 	@BeforeClass(alwaysRun = true)
@@ -59,9 +59,10 @@ public class BaseClass {
 	}
 
 	@AfterClass(alwaysRun = true)
-	public void config_AM() {
+	public void config_AM() throws Throwable {
 		wUtil.minimizeWindow(driver);
-		driver.close();
+		Thread.sleep(1000);
+		driver.quit();
 	}
 
 }

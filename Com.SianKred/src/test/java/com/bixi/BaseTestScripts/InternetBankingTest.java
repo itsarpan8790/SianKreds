@@ -49,8 +49,8 @@ public class InternetBankingTest extends BaseClass {
 //		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
 		
 		//Handle Password Change Excel
-		eUtil.writeDataIntoExcel("NeyazUTC_05", 1, 8, NEWPASSWORD);
-		eUtil.writeDataIntoExcel("NeyazUTC_05", 2, 8, PASSWORD);
+		eUtil.writeDataIntoExcel("ChangePassword", 1, 8, NEWPASSWORD);
+		eUtil.writeDataIntoExcel("ChangePassword", 2, 8, PASSWORD);
 		System.out.println("Excel Update successfully");
 		
 

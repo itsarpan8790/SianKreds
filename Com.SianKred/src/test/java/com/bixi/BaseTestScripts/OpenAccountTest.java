@@ -15,7 +15,7 @@ import com.bixi.pom.HomePage;
 public class OpenAccountTest extends BaseClass {
 
 	@Test(groups = "regression")
-	public void applyNewBankAccount_NeyazTC05() throws Throwable {
+	public void applyNewBankAccount_NeyazUTC05() throws Throwable {
 
 		ArrayList<String> al = new ArrayList<String>();
 		int rowCount = eUtil.getLastRowNumber("NeyazUTC_05");

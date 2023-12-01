@@ -46,6 +46,7 @@ public class InternetBankingTest extends BaseClass {
 		handleAlertPopUp(driver);
 		//Handle Password Change PropertyFile
 		fUtil.writeDataToPropertyFile("password", NEWPASSWORD);
+		Thread.sleep(500);
 		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
 		
 		//Handle Password Change Excel
@@ -65,7 +66,7 @@ public class InternetBankingTest extends BaseClass {
 		}
 		// Step 6. Logout
 		cpp.getLogOutBtn().click();
-		Thread.sleep(2000);
+		
 		
 	}
 

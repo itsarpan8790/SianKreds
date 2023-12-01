@@ -27,12 +27,12 @@ public class BaseClass {
 	@BeforeSuite(alwaysRun = true)
 	public void config_BS() throws Throwable {
 
-//		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
-//		PASSWORD = fUtil.readDataFromPropertyFile("password");
-//		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
-		CUSTOMERID = eUtil.readDataFromExcelFile("ChangePassword", 0, 8);
-		PASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 1, 8);
-		NEWPASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 2, 8);
+		CUSTOMERID = fUtil.readDataFromPropertyFile("customerId");
+		PASSWORD = fUtil.readDataFromPropertyFile("password");
+		NEWPASSWORD = fUtil.readDataFromPropertyFile("newpassword");
+//		CUSTOMERID = eUtil.readDataFromExcelFile("ChangePassword", 0, 8);
+//		PASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 1, 8);
+//		NEWPASSWORD = eUtil.readDataFromExcelFile("ChangePassword", 2, 8);
 	}
 //@Parameters("gateway")
 	@BeforeClass(alwaysRun = true)

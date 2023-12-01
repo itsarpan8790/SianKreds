@@ -1,79 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T17:54:07 IST" name="Default suite" finished-at="2023-11-30T17:54:18 IST" duration-ms="10482">
+  <suite started-at="2023-11-30T18:30:01 IST" name="Default suite" finished-at="2023-11-30T18:30:15 IST" duration-ms="14020">
     <groups>
-      <group name="regression">
-        <method signature="OpenAccountTest.applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" name="applyNewBankAccount_NeyazTC05" class="com.bixi.BaseTestScripts.OpenAccountTest"/>
-      </group> <!-- regression -->
+      <group name="system">
+        <method signature="InternetBankingTest.iBankingChangePassword()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" name="iBankingChangePassword" class="com.bixi.BaseTestScripts.InternetBankingTest"/>
+      </group> <!-- system -->
     </groups>
-    <test started-at="2023-11-30T17:54:07 IST" name="Default test" finished-at="2023-11-30T17:54:18 IST" duration-ms="10482">
-      <class name="com.bixi.BaseTestScripts.OpenAccountTest">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:54:06 IST" name="config_BS" finished-at="2023-11-30T17:54:07 IST" duration-ms="877" status="PASS">
+    <test started-at="2023-11-30T18:30:01 IST" name="Default test" finished-at="2023-11-30T18:30:15 IST" duration-ms="14020">
+      <class name="com.bixi.BaseTestScripts.InternetBankingTest">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" started-at="2023-11-30T18:30:00 IST" name="config_BS" finished-at="2023-11-30T18:30:01 IST" duration-ms="815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:54:07 IST" name="config_BC" finished-at="2023-11-30T17:54:10 IST" duration-ms="2803" status="PASS">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" started-at="2023-11-30T18:30:01 IST" name="config_BC" finished-at="2023-11-30T18:30:04 IST" duration-ms="2486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BC -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:54:10 IST" name="config_BM" finished-at="2023-11-30T17:54:10 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" started-at="2023-11-30T18:30:04 IST" name="config_BM" finished-at="2023-11-30T18:30:04 IST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_BM -->
-        <test-method signature="applyNewBankAccount_NeyazTC05()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:54:10 IST" name="applyNewBankAccount_NeyazTC05" finished-at="2023-11-30T17:54:17 IST" duration-ms="6918" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 10 out of bounds for length 10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 10
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:361)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at com.bixi.BaseTestScripts.OpenAccountTest.applyNewBankAccount_NeyazTC05(OpenAccountTest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        <test-method signature="iBankingChangePassword()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" started-at="2023-11-30T18:30:04 IST" name="iBankingChangePassword" finished-at="2023-11-30T18:30:14 IST" duration-ms="9804" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applyNewBankAccount_NeyazTC05 -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.bixi.BaseTestScripts.OpenAccountTest@14028087]" started-at="2023-11-30T17:54:17 IST" name="config_AM" finished-at="2023-11-30T17:54:18 IST" duration-ms="456" status="PASS">
+        </test-method> <!-- iBankingChangePassword -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.bixi.BaseTestScripts.InternetBankingTest@5b247367]" started-at="2023-11-30T18:30:14 IST" name="config_AM" finished-at="2023-11-30T18:30:15 IST" duration-ms="1536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config_AM -->
-      </class> <!-- com.bixi.BaseTestScripts.OpenAccountTest -->
+      </class> <!-- com.bixi.BaseTestScripts.InternetBankingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

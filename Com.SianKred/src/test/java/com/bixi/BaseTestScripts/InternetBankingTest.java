@@ -21,7 +21,7 @@ public class InternetBankingTest extends BaseClass {
 		WebElement iBankingLoginLink = hp.getiBankingLoginLink();
 		wUtil.multipleAction(driver, iBankinkLink, iBankingLoginLink);
 		wUtil.scrollUpAction(driver);
-		Thread.sleep(2000);
+		Thread.sleep(1500);
 
 		// User Login
 		CustomerLoginPage clp = new CustomerLoginPage(driver);

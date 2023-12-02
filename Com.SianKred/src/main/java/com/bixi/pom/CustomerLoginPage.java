@@ -34,7 +34,8 @@ public class CustomerLoginPage {
 	}
 
 	// Business Logic
-	public void loginAsCutomer(String UN, String PW) {
+	public void loginAsCutomer(String UN, String PW) throws Throwable {
+		Thread.sleep(2000);
 		custIdTextBx.sendKeys(UN);
 		passwordTextBx.sendKeys(PW);
 		loginBtn.click();

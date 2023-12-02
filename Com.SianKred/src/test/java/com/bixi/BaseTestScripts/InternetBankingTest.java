@@ -13,7 +13,7 @@ import com.bixi.pom.HomePage;
 public class InternetBankingTest extends BaseClass {
 
 	@Test(groups = "system")
-	public void iBankingChangePassword() throws Throwable {
+	public void iBankingChangePasswordTest() throws Throwable {
 
 		// Step 1. MouseHovering and clicking Login
 		HomePage hp = new HomePage(driver);
@@ -25,7 +25,10 @@ public class InternetBankingTest extends BaseClass {
 
 		// User Login
 		CustomerLoginPage clp = new CustomerLoginPage(driver);
-		clp.loginAsCutomer(CUSTOMERID, PASSWORD);
+		String CUSTOMERID1 = fUtil.readDataFromPropertyFile("customerId");
+		String PASSWORD1 = fUtil.readDataFromPropertyFile("password");
+		System.out.println(PASSWORD1+"----->  "+CUSTOMERID1);
+		clp.loginAsCutomer(CUSTOMERID1, PASSWORD1);
 		
 		
 		// Step 5.Changepassword
@@ -33,11 +36,12 @@ public class InternetBankingTest extends BaseClass {
 		cpp.getChangePwdLink().click();
 
 		Customer_Pass_ChangePage cpc = new Customer_Pass_ChangePage(driver);
-		cpc.getOldPWTextBx().sendKeys(PASSWORD);
+		cpc.getOldPWTextBx().sendKeys(PASSWORD1);
 		Thread.sleep(1000);
-		cpc.getCnfmOldPWTextBx().sendKeys(PASSWORD);
+		cpc.getCnfmOldPWTextBx().sendKeys(PASSWORD1);
 		Thread.sleep(1000);
-		cpc.getNewPWTextBx().sendKeys(NEWPASSWORD);
+		String NEWPASSWORD1 = fUtil.readDataFromPropertyFile("newpassword");
+		cpc.getNewPWTextBx().sendKeys(NEWPASSWORD1);
 		Thread.sleep(1000);
 		cpc.getSubmitBtn().click();
 		String confirmationPopupText = wUtil.getAlertPopUpText(driver);
@@ -45,9 +49,9 @@ public class InternetBankingTest extends BaseClass {
 		wUtil.
 		handleAlertPopUp(driver);
 		//Handle Password Change PropertyFile
-		fUtil.writeDataToPropertyFile("password", NEWPASSWORD);
-		Thread.sleep(500);
-		fUtil.writeDataToPropertyFile("newpassword", PASSWORD);
+		fUtil.writeDataToPropertyFile("password", NEWPASSWORD1);
+		Thread.sleep(2500);
+		fUtil.writeDataToPropertyFile("newpassword", PASSWORD1);
 		
 		//Handle Password Change Excel
 //		eUtil.writeDataIntoExcel("ChangePassword", 1, 8, NEWPASSWORD);

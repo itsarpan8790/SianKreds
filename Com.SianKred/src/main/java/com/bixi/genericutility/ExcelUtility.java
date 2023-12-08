@@ -1,4 +1,4 @@
- package com.bixi.genericutility;
+package com.bixi.genericutility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,6 +36,7 @@ public class ExcelUtility {
 
 	/**
 	 * This method is for counting Total number of Rows Present in Sheet
+	 * 
 	 * @author arpan
 	 * @param sheetName
 	 * @return
@@ -65,8 +66,9 @@ public class ExcelUtility {
 		FileInputStream fisE = new FileInputStream(IpathConstants.ExcelPath);
 		Workbook wb = WorkbookFactory.create(fisE);
 		wb.getSheet(sheetName).getRow(row).createCell(cell).setCellValue(data);
-		FileOutputStream fisO=new FileOutputStream(IpathConstants.ExcelPath);
+		FileOutputStream fisO = new FileOutputStream(IpathConstants.ExcelPath);
 		wb.write(fisO);
+		wb.close();
 
 	}
 
@@ -83,7 +85,7 @@ public class ExcelUtility {
 			String value = wb.getSheet(sheetName).getRow(i).getCell(1).getStringCellValue();
 			hm.put(key, value);
 		}
-		
+
 		for (Entry<String, String> set : hm.entrySet()) {
 //			if(set.getKey().contains("accountname"))
 //				driver.findElement(By.name(set.getKey())).sendKeys(set.getValue()+jLib.getRandomNumber());

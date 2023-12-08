@@ -1,6 +1,7 @@
 package LearnStringProg;
 
 import java.util.LinkedHashMap;
+import java.util.Map.Entry;
 
 public class IndexEachCharInStringAfterRemovedDuplicatesMAP_Q9_ii_07Dec {
 	public static void main(String[] args) {
@@ -10,6 +11,10 @@ public class IndexEachCharInStringAfterRemovedDuplicatesMAP_Q9_ii_07Dec {
 		for (int i = 0; i < str.length(); i++) {
 			hm.put(str.charAt(i), i);
 
+		}
+		//printing each Entries
+		for( Entry<Character, Integer> map:hm.entrySet()) {
+			System.out.println(map.getKey()+"-->"+map.getValue());
 		}
 
 		for (Character ch : hm.keySet()) {

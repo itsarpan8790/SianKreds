@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 
 public class Q1_ii_RemDup_Occ_Unique_Dup_MAP_7Dec {
 	public static void main(String[] args) {
-		int[] a = { 5, 4, 4, 2, 5, 4, 2, 1 };
+		int[] a = { 5, 4, 4, 2, 5,5, 4, 2, 1 };
 
 		LinkedHashMap<Integer, Integer> lhmap = new LinkedHashMap<Integer, Integer>();
 		// Step 1.Addingto map to remove duplicates

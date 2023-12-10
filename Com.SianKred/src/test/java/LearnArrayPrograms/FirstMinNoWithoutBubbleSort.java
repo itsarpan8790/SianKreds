@@ -7,7 +7,7 @@ public class FirstMinNoWithoutBubbleSort {
 		int min = ar[0];
 
 		for (int i = 0; i < ar.length; i++) {
-			if (min > ar[i])
+			if (ar[i] < min)
 				min = ar[i];
 		}
 		System.out.println("First minimum = " + min);

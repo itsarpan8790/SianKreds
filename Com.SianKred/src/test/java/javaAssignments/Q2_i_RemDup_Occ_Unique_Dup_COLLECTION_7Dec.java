@@ -7,21 +7,21 @@ public class Q2_i_RemDup_Occ_Unique_Dup_COLLECTION_7Dec {
 		String str = "hi hello hi hello welcome";
 		String[] ar = str.split(" ");
 
-		LinkedHashSet<String> set = new LinkedHashSet<String>();
+		LinkedHashSet<String> lset = new LinkedHashSet<String>();
 		// Step 1.Adding to set to Remove Duplicates.
 		for (int i = 0; i < ar.length; i++) {
-			set.add(ar[i]);
+			lset.add(ar[i]);
 
 		}
 		// Printing Set
-		for (String s : set) {
+		for (String s : lset) {
 			System.out.print(s + " ");
 
 		} 
 		System.out.println("");
 
 		// Step 2.Checking Occurence
-		for (String s : set) {
+		for (String s : lset) {
 			int count = 0;
 			for (int i = 0; i < ar.length; i++) {
 				if (s.equals(ar[i])) {

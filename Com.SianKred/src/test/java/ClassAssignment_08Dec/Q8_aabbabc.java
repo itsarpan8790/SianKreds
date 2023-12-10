@@ -6,7 +6,7 @@ public class Q8_aabbabc {
 		int count = 1;
 		for (int i = 0; i < s1.length() - 1; i++) {
 			if (s1.charAt(i) == s1.charAt(i + 1))
-				count++;
+				count++;//2
 			else {
 				System.out.print(s1.charAt(i) + "" + count);
 				count = 1;

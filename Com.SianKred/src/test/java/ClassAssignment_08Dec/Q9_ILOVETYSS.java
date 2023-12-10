@@ -7,7 +7,7 @@ public class Q9_ILOVETYSS {
 
 		StringBuilder sb = new StringBuilder(s1);
 		StringBuilder rev = sb.reverse();
-		// System.out.println(rev);
+		
 
 //		int count = s1.length() - 1;
 //		for (int i = 0; i < s.length(); i++) {

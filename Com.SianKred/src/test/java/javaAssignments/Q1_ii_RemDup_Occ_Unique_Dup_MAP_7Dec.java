@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 
 public class Q1_ii_RemDup_Occ_Unique_Dup_MAP_7Dec {
 	public static void main(String[] args) {
-		int[] a = { 5, 4, 4, 2, 5,5, 4, 2, 1 };
+		int[] a = { 5, 4, 4, 2, 5, 5, 4, 2, 1 };
 
 		LinkedHashMap<Integer, Integer> lhmap = new LinkedHashMap<Integer, Integer>();
 		// Step 1.Addingto map to remove duplicates
@@ -29,7 +29,19 @@ public class Q1_ii_RemDup_Occ_Unique_Dup_MAP_7Dec {
 				System.out.println(map.getKey() + " is duplicated ");
 			else
 				System.out.println(map.getKey() + " is unique ");
+
 		}
+		System.out.println("*********************************");
+		// Step 5. Printing highest occured Key
+		int maxOccurVal = 0;
+		int maxOccurKey = 0;
+		for (Entry<Integer, Integer> map : lhmap.entrySet()) {
+			if (map.getValue() >= maxOccurVal && map.getKey() > maxOccurKey) {
+				maxOccurVal = map.getValue();
+				maxOccurKey = map.getKey();
+			}
+		}
+		System.out.println(maxOccurKey + "-->" + maxOccurVal);
 
 	}
 

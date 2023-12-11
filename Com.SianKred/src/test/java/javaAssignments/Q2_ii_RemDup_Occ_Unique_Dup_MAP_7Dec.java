@@ -6,6 +6,7 @@ import java.util.TreeMap;
 public class Q2_ii_RemDup_Occ_Unique_Dup_MAP_7Dec {
 	public static void main(String[] args) {
 		String str = "hi hello hi hello welcome";
+
 		String[] ar = str.split(" ");
 
 		TreeMap<String, Integer> tmap = new TreeMap<String, Integer>();

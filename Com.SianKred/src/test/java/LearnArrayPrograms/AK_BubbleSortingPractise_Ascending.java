@@ -7,8 +7,8 @@ public class AK_BubbleSortingPractise_Ascending {
 		int size = ar.length;
 		for (int i = 0; i < size; i++) {
 
-			for (int j = 0; j < size - 1; j++) {//for (int j = 0; j < size -i- 1; j++)
-				if (ar[j] < ar[j + 1]) {
+			for (int j = 0; j < size - 1; j++) {
+				if (ar[j] > ar[j + 1]) {
 					temp = ar[j];
 					ar[j] = ar[j + 1];
 					ar[j + 1] = temp;
@@ -22,5 +22,4 @@ public class AK_BubbleSortingPractise_Ascending {
 		}
 
 	}
-
 }

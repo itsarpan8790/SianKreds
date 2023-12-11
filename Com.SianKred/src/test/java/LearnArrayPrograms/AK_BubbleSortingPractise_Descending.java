@@ -7,8 +7,8 @@ public class AK_BubbleSortingPractise_Descending {
 		int size = ar.length;
 		for (int i = 0; i < size; i++) {
 
-			for (int j = 0; j < size - 1; j++) {
-				if (ar[j] > ar[j + 1]) {
+			for (int j = 0; j < size - 1; j++) {//for (int j = 0; j < size -i- 1; j++)
+				if (ar[j] < ar[j + 1]) {
 					temp = ar[j];
 					ar[j] = ar[j + 1];
 					ar[j + 1] = temp;
@@ -16,10 +16,11 @@ public class AK_BubbleSortingPractise_Descending {
 			}
 
 		}
-		System.out.println("Afetr Sorting");
+		System.out.println("Afetr Sorting descending");
 		for (int i = 0; i < ar.length; i++) {
 			System.out.print(ar[i]+" ");
 		}
 
 	}
+
 }

@@ -3,6 +3,7 @@ package ClassAssignment_08Dec;
 public class Q2_FibonacciSeries {
 	public static void main(String[] args) {
 		int n = 10;
+		
 		int f1 = 0;
 		int f2 = 1;
 		int f3 = 0;

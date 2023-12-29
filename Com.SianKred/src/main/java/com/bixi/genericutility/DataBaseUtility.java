@@ -35,18 +35,18 @@ public class DataBaseUtility {
 	 */
 
 	public String executeQueryAndGetData(int colNum, String query, String expData) throws SQLException {
-		String data = null;
+		String actData = null;
 		boolean flag = false;
 		ResultSet result = conn.createStatement().executeQuery(query);
 		while (result.next()) {
-			data = result.getString(colNum);
-			if (data.equalsIgnoreCase(expData)) {
+			actData = result.getString(colNum);
+			if (actData.equalsIgnoreCase(expData)) {
 				flag = true; // flag rising
 				break;
 			}
 		}
 		if (flag) {
-			System.out.println(data + "---> data verified");
+			System.out.println(actData + "---> data verified");
 			return expData;
 		} else {
 			System.out.println("data not verified");

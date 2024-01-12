@@ -1,4 +1,4 @@
-package com.bixi.genericutility;
+ package com.bixi.genericutility;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -275,6 +275,12 @@ public class WebDriverUtility {
 
 		}
 		return path;
+
+	}
+	
+	public void ScrollAction(WebDriver driver, WebElement element) {
+		Actions act = new Actions(driver);
+		act.scrollToElement(element).perform();
 
 	}
 

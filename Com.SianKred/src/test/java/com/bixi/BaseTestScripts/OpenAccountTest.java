@@ -7,9 +7,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.bixi.genericutility.BaseClass;
-import com.bixi.pom.AccountRegistrationFormPage;
-import com.bixi.pom.Customer_RegForm_ConfirmPage;
-import com.bixi.pom.HomePage;
+import com.bixi.objectrepository.AccountRegistrationFormPage;
+import com.bixi.objectrepository.Customer_RegForm_ConfirmPage;
+import com.bixi.objectrepository.HomePage;
 
 //@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
 public class OpenAccountTest extends BaseClass {

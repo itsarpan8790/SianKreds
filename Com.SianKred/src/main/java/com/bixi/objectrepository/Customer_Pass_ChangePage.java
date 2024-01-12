@@ -1,4 +1,4 @@
-package com.bixi.pom;
+package com.bixi.objectrepository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

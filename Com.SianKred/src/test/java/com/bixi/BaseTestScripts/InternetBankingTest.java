@@ -4,11 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.bixi.genericutility.BaseClass;
-import com.bixi.pom.CustomerLoginPage;
-import com.bixi.pom.Customer_Pass_ChangePage;
-import com.bixi.pom.Customer_ProfilePage;
-import com.bixi.pom.Ebanking_Reg_FormPage;
-import com.bixi.pom.HomePage;
+import com.bixi.objectrepository.CustomerLoginPage;
+import com.bixi.objectrepository.Customer_Pass_ChangePage;
+import com.bixi.objectrepository.Customer_ProfilePage;
+import com.bixi.objectrepository.Ebanking_Reg_FormPage;
+import com.bixi.objectrepository.HomePage;
 //@Listeners(com.bixi.genericutility.ListenerImplementaion.class)
 public class InternetBankingTest extends BaseClass {
 

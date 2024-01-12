@@ -3,8 +3,8 @@ package com.bixi.BaseTestScripts;
 import org.testng.annotations.Test;
 
 import com.bixi.genericutility.BaseClass;
-import com.bixi.pom.Debit_Card_FormPage;
-import com.bixi.pom.HomePage;
+import com.bixi.objectrepository.Debit_Card_FormPage;
+import com.bixi.objectrepository.HomePage;
 
 public class DebitCardTest extends BaseClass {
 

@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 public class ExcelUtility {
 
 	/**
-	 * This method is to read data From Excel File
+	 * This method is to read data From any cell of an Excel File 
 	 * 
 	 * @author arpan
 	 * @param sheetName
@@ -47,6 +47,7 @@ public class ExcelUtility {
 		FileInputStream fisE = new FileInputStream(IpathConstants.ExcelPath);
 		Workbook wb = WorkbookFactory.create(fisE);
 		int rowCount = wb.getSheet(sheetName).getLastRowNum();
+		//int rowCount = wb.getSheet(sheetName).getPhysicalNumberOfRows();
 		return rowCount;
 	}
 
